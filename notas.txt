@@ -1,0 +1,27 @@
+composer global remove laravel/installer
+composer global require laravel/installer
+
+versión actual de laravel Installer-> 5.16 01-07-2025
+Se esta desarrollando con Iconos->https://heroicons.com/
+
+- laravel new example-app
+
+- composer require --dev laravel-lang/common -> para traducir a español
+    -> php artisan lang:add es 
+    -> modificar en config/app.php -> 'locale' => 'es',
+
+- Configurar la Base de Datos.
+    -> php artisan migrate
+
+- Al clonar el proyecto->composer install
+
+
+
+- Comandos Artisan:
+    php artisan config:clear
+    php artisan view:clear  
+    php artisan migrate:fresh --seed
+
+Recuerda que estas con el github de Monica.
+
+
