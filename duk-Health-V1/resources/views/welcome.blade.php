@@ -82,8 +82,8 @@
                                     <span class="rounded-full bg-[#dbdbd7] dark:bg-[#3E3E3A] w-1.5 h-1.5"></span>
                                 </span>
                             </span>
-                            <span>
-                                <marquee loop="3">Funcionalidad 3: Modulo Medicos & Pacientes..</marquee>
+                            <span class="text-[#706f6c] dark:text-[#5df076]">
+                                Funcionalidad 3: Modulo Medicos & Pacientes
                             </span>
                         </li>
                         <li class="flex items-center gap-4 py-2 relative before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A] before:bottom-1/2 before:top-0 before:start-[0.4rem] before:absolute">
@@ -93,7 +93,7 @@
                                 </span>
                             </span>
                             <span>
-                                Funcionalidad 4: Agendamiento
+                                <marquee loop="3">Funcionalidad 3: Modulo Nueva Venta o Servicio</marquee>
                             </span>
                         </li>
                         <li class="flex items-center gap-4 py-2 relative before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A] before:bottom-1/2 before:top-0 before:start-[0.4rem] before:absolute">
@@ -103,8 +103,7 @@
                                 </span>
                             </span>
                             <span>
-                                Funcionalidad 6: Modulo -> Nueva Venta o Servicio -> En Desarrollo.
-
+                                 Funcionalidad 4: Agendamiento de Citas Médicas.
                             </span>
                         </li>
                             <li class="flex items-center gap-4 py-2 relative before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A] before:bottom-1/2 before:top-0 before:start-[0.4rem] before:absolute">
@@ -125,6 +124,7 @@
                             </span>
                             <span>
                                 Funcionalidad 8: Pagina web de la IPS.
+                               
                             </span>
                         </li>
                     </ul>

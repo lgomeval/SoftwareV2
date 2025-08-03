@@ -3,19 +3,19 @@
 use App\Models\User;
 use Livewire\Volt\Volt;
 
-test('profile page is displayed', function () {
+test('Se muestra la página de perfil', function () {
     $this->actingAs($user = User::factory()->create());
 
     $this->get('/settings/profile')->assertOk();
 });
 
-test('profile information can be updated', function () {
+test('La información del perfil se puede actualizar', function () {
     $user = User::factory()->create();
 
     $this->actingAs($user);
 
     $response = Volt::test('settings.profile')
-        ->set('name', 'Test User')
+        ->set('nombres', 'Test User')
         ->set('email', 'test@example.com')
         ->call('updateProfileInformation');
 
@@ -23,18 +23,18 @@ test('profile information can be updated', function () {
 
     $user->refresh();
 
-    expect($user->name)->toEqual('Test User');
+    expect($user->nombres)->toEqual('Test User');
     expect($user->email)->toEqual('test@example.com');
     expect($user->email_verified_at)->toBeNull();
 });
 
-test('email verification status is unchanged when email address is unchanged', function () {
+test('El estado de verificación del correo electrónico no cambia cuando la dirección de correo electrónico no cambia', function () {
     $user = User::factory()->create();
 
     $this->actingAs($user);
 
     $response = Volt::test('settings.profile')
-        ->set('name', 'Test User')
+        ->set('nombres', 'Test User')
         ->set('email', $user->email)
         ->call('updateProfileInformation');
 
@@ -60,7 +60,7 @@ test('user can delete their account', function () {
     expect(auth()->check())->toBeFalse();
 });
 
-test('correct password must be provided to delete account', function () {
+test('Se debe proporcionar la contraseña correcta para eliminar la cuenta', function () {
     $user = User::factory()->create();
 
     $this->actingAs($user);

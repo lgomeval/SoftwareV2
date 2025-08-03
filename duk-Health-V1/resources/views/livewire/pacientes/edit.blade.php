@@ -8,8 +8,6 @@ new class extends Component {
 
     public $nombres, $apellidos, $tipo_identificacion, $numero_identificacion, $genero, $fecha_de_nacimiento, $tipo_sangre, $factor_rh, $grupo_etnico, $nivel_estudio, $estado_civil, $path_fotografia, $departamento_residencia, $ciudad_residencia, $direccion_residencia, $estrato, $zona_residencial, $comuna, $telefono, $email, $eps, $arl, $afp, $cargo_a_desempenar, $acompanante, $path_firma, $estado;
 
-    // Antes de aplicar esta sintaxis de codigo en los demas componentes, se debe hacer pruebas
-
     public function mount(Paciente $paciente)
     {
         $this->paciente = $paciente;
