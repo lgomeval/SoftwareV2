@@ -57,9 +57,9 @@
     </flux:navlist>
 
     {{-- Clientes --}}
-    <flux:navlist class="w-64" variant="outline">
-        <flux:navlist.group heading="Clientes" icon="clipboard-list" expandable :expanded="false">
-            <flux:navlist.item href="#" icon="magnifying-glass-circle">Consultar</flux:navlist.item>
+    <flux:navlist class="w-64" variant="outline" >
+        <flux:navlist.group heading="Clientes" icon="clipboard-list" expandable :expanded="false" >
+            <flux:navlist.item href="{{ route('clientes.index') }}" badge="{{ \App\Models\Cliente::count() }}" icon="magnifying-glass-circle" >Consultar</flux:navlist.item>
             <flux:navlist.item href="#" icon="pencil-square">Certificaciones</flux:navlist.item>
         </flux:navlist.group>
     </flux:navlist>

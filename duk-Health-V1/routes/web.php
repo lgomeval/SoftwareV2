@@ -45,5 +45,14 @@ Route::middleware(['auth', 'can:pacientes'])->group(function () {
     Volt::route('pacientes/{paciente}/edit', 'pacientes.edit')->name('pacientes.edit');
 });
 
+// Gestion de Clientes
+Route::middleware(['auth', 'can:clientes'])->group(function () {
+    Volt::route('clientes', 'clientes.index')->name('clientes.index');
+    Volt::route('clientes/create', 'clientes.create')->name('clientes.create');
+    Volt::route('clientes/store', 'clientes.store')->name('clientes.store');
+    Volt::route('clientes/{cliente}/edit', 'clientes.edit')->name('clientes.edit');
+});
+
+
 
 require __DIR__.'/auth.php';

@@ -37,7 +37,6 @@ class Paciente extends Model
         'acompanante',
         'path_firma',
         'estado',
-        'observaciones',
         'paciente_id',
     ];
 
