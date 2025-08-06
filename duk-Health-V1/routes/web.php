@@ -53,6 +53,13 @@ Route::middleware(['auth', 'can:clientes'])->group(function () {
     Volt::route('clientes/{cliente}/edit', 'clientes.edit')->name('clientes.edit');
 });
 
+// Gestion de Ordenes de Servicio
+Route::middleware(['auth', 'can:ordenes-de-servicio'])->group(function () {
+    Volt::route('ordenes-de-servicio', 'ordendeservicio.index')->name('ordenes-de-servicio.index');
+    Volt::route('ordenes-de-servicio/create', 'ordendeservicio.create')->name('ordenes-de-servicio.create');
+    Volt::route('ordenes-de-servicio/{orden}/edit', 'ordendeservicio.edit')->name('ordenes-de-servicio.edit');
+});
+
 
 
 require __DIR__.'/auth.php';

@@ -49,5 +49,12 @@ class RoleSeeder extends Seeder
         Permission::create(['name' => 'clientes.create'])->syncRoles([$role_admin, $role_dev]);
         Permission::create(['name' => 'clientes.edit'])->syncRoles([$role_admin, $role_sac, $role_dev]);
         Permission::create(['name' => 'clientes.delete'])->syncRoles([$role_admin, $role_dev]);
+
+        // ordenes-de-servicio
+        Permission::create(['name' => 'ordenes-de-servicio'])->syncRoles([$role_admin, $role_sac, $role_dev]);
+        Permission::create(['name' => 'ordenes-de-servicio.index'])->syncRoles([$role_admin, $role_sac, $role_dev]);
+        Permission::create(['name' => 'ordenes-de-servicio.create'])->syncRoles([$role_admin, $role_dev]);
+        Permission::create(['name' => 'ordenes-de-servicio.edit'])->syncRoles([$role_admin, $role_sac, $role_dev]);
+        Permission::create(['name' => 'ordenes-de-servicio.delete'])->syncRoles([$role_admin, $role_dev]);
     }
 }

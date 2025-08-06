@@ -9,7 +9,7 @@ new class extends Component {
 
     public function rules(): array
     {
-        return new PacienteRequest()->rules();
+        return (new PacienteRequest())->rules();
     }
 
     public function crearPaciente()

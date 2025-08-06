@@ -17,7 +17,7 @@
     {{-- Nueva Venta --}}
     <flux:navlist class="w-64" variant="outline">
         <flux:navlist.group heading="Nueva Venta o Servicio" expandable :expanded="false">
-            <flux:navlist.item href="#" icon="credit-card">Crear Venta</flux:navlist.item>
+            <flux:navlist.item href="{{ route('ordenes-de-servicio.create') }}" icon="credit-card">Crear Venta</flux:navlist.item>
         </flux:navlist.group>
     </flux:navlist>
 

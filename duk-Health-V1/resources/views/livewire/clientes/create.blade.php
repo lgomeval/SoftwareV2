@@ -9,7 +9,7 @@ new class extends Component {
 
     public function rules(): array
     {
-        return new ClienteRequest()->rules();
+        return (new ClienteRequest())->rules();
     }
 
     public function crearCliente()

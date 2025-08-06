@@ -93,7 +93,7 @@
                                 </span>
                             </span>
                             <span>
-                                <marquee loop="3">Funcionalidad 4: Modulo Nueva Venta o Servicio</marquee>
+                                <marquee loop="3">Funcionalidad 4: Modulo Clientes & Nueva Venta o Servicio</marquee>
                             </span>
                         </li>
                         <li class="flex items-center gap-4 py-2 relative before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A] before:bottom-1/2 before:top-0 before:start-[0.4rem] before:absolute">
